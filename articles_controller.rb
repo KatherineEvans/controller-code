@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
 
     if @article.save
 
-      # Again, the respond to allows you to have a Rails frontend (html) and a React frontend (json)
+      # Again, the respond_to allows you to have a Rails frontend (html) and a React frontend (json)
       respond_to do |format|
         format.html do
           redirect_to @article
